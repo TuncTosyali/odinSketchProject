@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+#wholePage{
+    display: flex;
+}
+
+#container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+}
+
+.myDiv{
+    flex-grow: 1;
+}
+
+.aRow{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
