@@ -5,17 +5,14 @@ function drawGrid(size) {
         for (let j = 0; j < size; j++) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("myDiv");
+            newDiv.addEventListener("mousemove", (evt) => {
+                evt.target.style.backgroundColor = "red";
+            });
             newRow.appendChild(newDiv);
         }
         newRow.classList.add("aRow");
         container.appendChild(newRow);
     }
-    const allBoxes = document.querySelectorAll(".myDiv");
-    allBoxes.forEach((eachBox) => {
-        eachBox.addEventListener("mousemove", (evt) => {
-            evt.target.style.backgroundColor = "red";
-        });
-    });
 }
 
 const resetButton = document.querySelector("#resetButton");
